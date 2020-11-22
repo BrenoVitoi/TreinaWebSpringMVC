@@ -5,7 +5,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+<spring:url value="/resources/js/jquery.min.js" var="jequeryJS"></spring:url>
+<spring:url value="/resources/css/bootstrap.min.css" var="bootstrapCSS"></spring:url>
+<spring:url value="/resources/js/bootstrap.min.js" var="bootstrapJS"></spring:url>
 
 <meta charset="ISO-8859-1">
 <title><tiles:insertAttribute name="title" ignore="true"></tiles:insertAttribute></title>

@@ -18,7 +18,7 @@ public class AlbunsController {
 	@RequestMapping(value = "/adicionar", method = RequestMethod.GET)
 	public String adicionar(Model model) {
 		model.addAttribute("album", new Album());
-		return "album.adcionar.tiles";
+		return "album.adicionar.tiles";
 	}
 	
 	@RequestMapping(value = "/adicionar", method = RequestMethod.POST)
