@@ -6,4 +6,6 @@ import br.com.treinaweb.springmvc.dominios.Album;
 
 public interface RepositorioAlbum extends JpaRepository<Album, Long> {
 
+	Album findOne(Long id);
+
 }
