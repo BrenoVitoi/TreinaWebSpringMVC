@@ -38,7 +38,6 @@ public class Musica {
 	@Temporal(TemporalType.DATE)
 	@DateTimeFormat(pattern = "dd/MM/yyyy")
 	@NotNull(message = "A data de criação é obrigatória")
-	@NotEmpty(message = " A data de criação é obrigatória")
 	private Date dataCriacao;
 	
 	@ManyToOne(fetch = FetchType.EAGER)
