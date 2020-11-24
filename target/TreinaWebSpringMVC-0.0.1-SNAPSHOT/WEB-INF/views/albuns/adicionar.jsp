@@ -3,6 +3,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <h2>Inserção de novo álbum...</h2>
+<br />
 <c:url var="actionAdicionar" value="/albuns/adicionar"/>
 <form:form action="${actionAdicionar}" method="post"
            modelAttribute="album">

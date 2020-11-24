@@ -5,7 +5,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+<spring:url value="/resources/js/jquery.min.js" var="jqueryJS"></spring:url>
+<spring:url value="/resources/css/bootstrap.min.css" var="bootstrapCSS"></spring:url>
+<spring:url value="/resources/js/bootstrap.min.js" var="bootstrapJS"></spring:url>
 
 <meta charset="ISO-8859-1">
 <title><tiles:insertAttribute name="title" ignore="true"></tiles:insertAttribute></title>
@@ -17,9 +19,11 @@
 	<div style="width: 100%">
 		<tiles:insertAttribute name="header" ignore="false"></tiles:insertAttribute>
 	</div>
+	
 	<div style="width: 100%; margin: 2%;">
 		<tiles:insertAttribute name="body" ignore="false"></tiles:insertAttribute>
 	</div>
+	
 	<div style="width: 100%">
 		<tiles:insertAttribute name="footer" ignore="false"></tiles:insertAttribute>
 	</div>

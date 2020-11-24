@@ -1,10 +1,15 @@
 package br.com.treinaweb.springmvc.dominios;
 
+import java.util.Set;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
@@ -33,6 +38,9 @@ public class Album {
 	@Max(value = 2030, message = "O ano de lançamento dever ser até 2030")
 	@Column(name = "alb_ano_lancamento", nullable = false)
 	private int anoDeLancamento;
+	
+	@OneToMany(mappedBy = "album", fetch = FetchType.EAGER, cascade = CascadeType.MERGE, orphanRemoval = true)
+	private Set<Musica> musicas;
 
 	public Long getId() {
 		return id;
@@ -56,6 +64,14 @@ public class Album {
 
 	public void setAnoDeLancamento(int anoDeLancamento) {
 		this.anoDeLancamento = anoDeLancamento;
+	}
+
+	public Set<Musica> getMusicas() {
+		return musicas;
+	}
+
+	public void setMusicas(Set<Musica> musicas) {
+		this.musicas = musicas;
 	}
 
 }
