@@ -12,8 +12,11 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 import org.hibernate.annotations.ManyToAny;
+import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
@@ -26,11 +29,16 @@ public class Musica {
 	private Long id;
 	
 	@Column(name = "mus_nome", nullable = false, length = 10)
+	@Size(min = 3, max = 10, message = "O nome da música deve conter entre 3 e 10 caracteres.")
+	@NotEmpty(message = " O nome é obrigatório")
+	@NotNull(message = "O nome é obrigatório")
 	private String nome;
 	
 	@Column(name = "mus_data_criacao", nullable = false)
 	@Temporal(TemporalType.DATE)
 	@DateTimeFormat(pattern = "dd/MM/yyyy")
+	@NotNull(message = "A data de criação é obrigatória")
+	@NotEmpty(message = " A data de criação é obrigatória")
 	private Date dataCriacao;
 	
 	@ManyToOne(fetch = FetchType.EAGER)
