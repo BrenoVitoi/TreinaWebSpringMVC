@@ -1,7 +1,10 @@
 br\com\treinaweb\springmvc\repositorios\RepositorioAlbum.class
 br\com\treinaweb\springmvc\controllers\HelloController.class
+br\com\treinaweb\springmvc\controllers\UsuariosController.class
 br\com\treinaweb\springmvc\dominios\Album.class
+br\com\treinaweb\springmvc\dominios\Usuario.class
 br\com\treinaweb\springmvc\controllers\AlbunsController.class
+br\com\treinaweb\springmvc\repositorios\RepositorioUsuario.class
 br\com\treinaweb\springmvc\dominios\Musica.class
 br\com\treinaweb\springmvc\repositorios\RepositorioMusica.class
 br\com\treinaweb\springmvc\controllers\MusicasController.class

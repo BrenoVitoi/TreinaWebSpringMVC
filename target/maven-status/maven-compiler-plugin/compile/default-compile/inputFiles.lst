@@ -1,7 +1,10 @@
 C:\workspace\CursoSpringMVC\TreinaWebSpringMVC\src\br\com\treinaweb\springmvc\controllers\AlbunsController.java
 C:\workspace\CursoSpringMVC\TreinaWebSpringMVC\src\br\com\treinaweb\springmvc\dominios\Album.java
 C:\workspace\CursoSpringMVC\TreinaWebSpringMVC\src\br\com\treinaweb\springmvc\repositorios\RepositorioMusica.java
+C:\workspace\CursoSpringMVC\TreinaWebSpringMVC\src\br\com\treinaweb\springmvc\dominios\Usuario.java
 C:\workspace\CursoSpringMVC\TreinaWebSpringMVC\src\br\com\treinaweb\springmvc\controllers\MusicasController.java
+C:\workspace\CursoSpringMVC\TreinaWebSpringMVC\src\br\com\treinaweb\springmvc\repositorios\RepositorioUsuario.java
 C:\workspace\CursoSpringMVC\TreinaWebSpringMVC\src\br\com\treinaweb\springmvc\controllers\HelloController.java
+C:\workspace\CursoSpringMVC\TreinaWebSpringMVC\src\br\com\treinaweb\springmvc\controllers\UsuariosController.java
 C:\workspace\CursoSpringMVC\TreinaWebSpringMVC\src\br\com\treinaweb\springmvc\repositorios\RepositorioAlbum.java
 C:\workspace\CursoSpringMVC\TreinaWebSpringMVC\src\br\com\treinaweb\springmvc\dominios\Musica.java

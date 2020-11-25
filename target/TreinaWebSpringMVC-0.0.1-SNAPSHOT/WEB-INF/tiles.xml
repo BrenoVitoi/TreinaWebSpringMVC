@@ -45,4 +45,25 @@
 		<put-attribute name="body" value="/WEB-INF/views/musicas/listar.jsp"></put-attribute>
 	</definition>
 	
+	
+	<!-- ** Usuários ** -->
+	<definition name="usuario.adicionar.tiles" extends="layout.tiles">
+		<put-attribute name="title" value="TreinaWeb Spring MVC: Adição de Usuário"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/usuarios/adicionar.jsp"></put-attribute>
+	</definition>
+	<definition name="usuario.listar.tiles" extends="layout.tiles">
+		<put-attribute name="title" value="TreinaWeb Spring MVC: Exibição de Usuários"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/usuarios/listar.jsp"></put-attribute>
+	</definition>
+
+	<!-- ** Home ** -->
+	<definition name="home.login.tiles" extends="layout.tiles">
+		<put-attribute name="title" value="TreinaWeb Spring MVC: Login no Sistema"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/home/login.jsp"></put-attribute>
+	</definition>
+	<definition name="home.bemvindo.tiles" extends="layout.tiles">
+		<put-attribute name="title" value="TreinaWeb Spring MVC: Bem Vindo"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/home/bemvindo.jsp"></put-attribute>
+	</definition>
 </tiles-definitions>
+	
